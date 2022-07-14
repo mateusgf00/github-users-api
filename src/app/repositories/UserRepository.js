@@ -3,8 +3,8 @@ const axios = require('axios');
 class UserRepository{
     async findAll(){
         const users = await axios('https://api.github.com/users');
-
-        return users.data
+           
+        return users.data;
     }
     async findByUsername(username){
         const user = await axios(`https://api.github.com/users/${username}`);
@@ -18,7 +18,7 @@ class UserRepository{
         return repos.data;
     }
 
-}   Q
+}
 
 
 module.exports = new UserRepository();
