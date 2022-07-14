@@ -4,7 +4,7 @@
   "description": "backend of test shaw and partners",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "start": "node src/index.js"
   },
   "author": "mateus ferreira",
   "license": "ISC",
